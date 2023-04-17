@@ -1,88 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&amp;display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!--container-->
     <div class="container">
-        <!--header-->
-        <div class="sections" style="border-radius: 0px 0px 15px 15px;">
-            <h1>Auto/Coevaluación</h1>
-            <p>Se propone un espacio para que les estudiantes reflexionen sobre como es el proceso en el equipo de
-                trabajo. Esta es una herramienta tanto para les estudiantes, como para el equipo docente, de esta manera
-                podremos entender el funcionamiento de los equipos y apoyarlos en caso de que se considere necesario. Se
-                pretende que les estudiantes puedan ser lo más sinceros posible a la hora de completarla, recordando que
-                no es una herramienta para puntuar a sus compañeres, ni a elles mismes, sino dar a conocer las
-                fortalezas y debilidades por las que atraviesa el equipo de trabajo.
-                Los resultados serán vistos únicamente por el equipo docente con el fin de mantener el anonimato de cada
-                une. De igual forma, en caso de que se identifiquen dificultades que estén perjudicando al equipo de
-                forma circunstancial, se evaluará el caso y se propondrán acciones.</p>
+      <!--header-->
+      <div class="sections" style="border-radius: 0px 0px 15px 15px">
+        <h1>Auto/Coevaluación</h1>
+        <p>
+          Se propone un espacio para que les estudiantes reflexionen sobre como
+          es el proceso en el equipo de trabajo. Esta es una herramienta tanto
+          para les estudiantes, como para el equipo docente, de esta manera
+          podremos entender el funcionamiento de los equipos y apoyarlos en caso
+          de que se considere necesario. Se pretende que les estudiantes puedan
+          ser lo más sinceros posible a la hora de completarla, recordando que
+          no es una herramienta para puntuar a sus compañeres, ni a elles
+          mismes, sino dar a conocer las fortalezas y debilidades por las que
+          atraviesa el equipo de trabajo. Los resultados serán vistos únicamente
+          por el equipo docente con el fin de mantener el anonimato de cada une.
+          De igual forma, en caso de que se identifiquen dificultades que estén
+          perjudicando al equipo de forma circunstancial, se evaluará el caso y
+          se propondrán acciones.
+        </p>
+      </div>
+      <!--Inicia el Form-->
+      <form
+        id="formulario"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwAuIlcaT5S4nqygT0RLAJezFWDQrcpodxn6Wx7jCUWLwFAQ/formResponse"
+        target="_self"
+        method="POST"
+      >
+        <!--El action tiene que corresponder con el de GForms-->
+        <!--Atmosfera section-->
 
-        </div>
-        <!--Inicia el Form-->
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwAuIlcaT5S4nqygT0RLAJezFWDQrcpodxn6Wx7jCUWLwFAQ/formResponse" target="_self" method="POST"><!--El action tiene que corresponder con el de GForms-->
-            <!--Atmosfera section-->
-            <div class="sections">
-                <div>
-                    <h2>Atmósfera</h2>
-                </div>
-                <!--Row de options-->
-                <div class="flex-container">
-
-                    <div class="indicator"></div>
-                    <!--Card-->
-                    <div class="card">
-                        <div>
-                            <input type="radio" id="test1" name="entry.1145032404" value="Atmósfera de trabajo relajada, facilita la interacción.">
-                        </div>
-                        <label for="test1"><span> Atmósfera de trabajo relajada, facilita la interacción.</span>
-                           
-                        </label>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <input type="radio" id="test2" name="entry.1145032404" value="Atmósfera de trabajo varía, hay veces que la interacción es fluida y otras veces dificultosa.">
-                        </div>
-                        <label for="test2"><span>
-                            Atmósfera de trabajo varía, hay veces que la interacción es fluida y otras veces dificultosa.</span>
-                        </label>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <input type="radio" id="test3" name="entry.1145032404" value="Atmósfera de trabajo tensa, dificulta la interacción.">
-                        </div>
-                        <label for="test3"><span>
-                            Atmósfera de trabajo tensa, dificulta la interacción.</span>
-                        </label>
-                    </div>
-                </div>
-                <!--text area-->
-                <div class="card_comment">
-                    <div class="textareaField">
-                        <label for="atmosferaOpinion">Comentarios sobre la Atmósfera del equipo (opcional)</label>
-                        <textarea name="entry.1810892224" id="atmosferaOpinion" placeholder=" " wrap="soft"></textarea>
-                        
-                        
-                    </div>
-                </div>
-
-                <button type="submit">Enviar</button>
-
+        <div class="sections categoria">
+          <div>
+            <h2>Atmósfera</h2>
+          </div>
+          <!--Row de options-->
+          <div class="flex-container">
+            <div class="indicator"></div>
+            <!--Card-->
+            <div class="card">
+              <div>
+                <input
+                  type="radio"
+                  id="test1"
+                  name="entry.1145032404"
+                  value="Atmósfera de trabajo relajada, facilita la interacción."
+                />
+              </div>
+              <label for="test1"
+                ><span>
+                  Atmósfera de trabajo relajada, facilita la interacción.</span
+                >
+              </label>
             </div>
-        </form>
+            <div class="card">
+              <div>
+                <input
+                  type="radio"
+                  id="test2"
+                  name="entry.1145032404"
+                  value="Atmósfera de trabajo varía, hay veces que la interacción es fluida y otras veces dificultosa."
+                />
+              </div>
+              <label for="test2"
+                ><span>
+                  Atmósfera de trabajo varía, hay veces que la interacción es
+                  fluida y otras veces dificultosa.</span
+                >
+              </label>
+            </div>
+            <div class="card">
+              <div>
+                <input
+                  type="radio"
+                  id="test3"
+                  name="entry.1145032404"
+                  value="Atmósfera de trabajo tensa, dificulta la interacción."
+                />
+              </div>
+              <label for="test3"
+                ><span>
+                  Atmósfera de trabajo tensa, dificulta la interacción.</span
+                >
+              </label>
+            </div>
+          </div>
+          <!--text area-->
+          <div class="card_comment">
+            <div class="textareaField">
+              <label for="atmosferaOpinion"
+                >Comentarios sobre la Atmósfera del equipo (opcional)</label
+              >
+              <textarea
+                name="entry.1810892224"
+                id="atmosferaOpinion"
+                placeholder=" "
+                wrap="soft"
+              ></textarea>
+            </div>
+          </div>
 
+          <button type="submit">Enviar</button>
+        </div>
+
+        <div class="sections">
+          <div>
+            <h2>Atmósfera</h2>
+          </div>
+          <!--Row de options-->
+          <div class="flex-container">
+            <div class="indicator"></div>
+            <!--Card-->
+            <div class="card">
+              <div>
+                <input
+                  type="radio"
+                  id="test1"
+                  name="entry.1145032404"
+                  value="Atmósfera de trabajo relajada, facilita la interacción."
+                />
+              </div>
+              <label for="test1"
+                ><span>
+                  Atmósfera de trabajo relajada, facilita la interacción.</span
+                >
+              </label>
+            </div>
+            <div class="card">
+              <div>
+                <input
+                  type="radio"
+                  id="test2"
+                  name="entry.1145032404"
+                  value="Atmósfera de trabajo varía, hay veces que la interacción es fluida y otras veces dificultosa."
+                />
+              </div>
+              <label for="test2"
+                ><span>
+                  Atmósfera de trabajo varía, hay veces que la interacción es
+                  fluida y otras veces dificultosa.</span
+                >
+              </label>
+            </div>
+            <div class="card">
+              <div>
+                <input
+                  type="radio"
+                  id="test3"
+                  name="entry.1145032404"
+                  value="Atmósfera de trabajo tensa, dificulta la interacción."
+                />
+              </div>
+              <label for="test3"
+                ><span>
+                  Atmósfera de trabajo tensa, dificulta la interacción.</span
+                >
+              </label>
+            </div>
+          </div>
+          <!--text area-->
+          <div class="card_comment">
+            <div class="textareaField">
+              <label for="atmosferaOpinion"
+                >Comentarios sobre la Atmósfera del equipo (opcional)</label
+              >
+              <textarea
+                name="entry.1810892224"
+                id="atmosferaOpinion"
+                placeholder=" "
+                wrap="soft"
+              ></textarea>
+            </div>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
     </div>
 
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
